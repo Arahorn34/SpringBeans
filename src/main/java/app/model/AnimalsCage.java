@@ -18,14 +18,11 @@ public class AnimalsCage {
         System.out.println("Say:");
         System.out.println(animal.toString());
         System.out.println("At:");
-        System.out.println(myTimer.getTime());
+        System.out.println(getTimer().getTime());
         System.out.println("________________________");
     }
 
     public MyTimer getTimer() {
-        if (myTimer == null) {
-            myTimer = new MyTimer();
-        }
         return myTimer;
     }
 }
